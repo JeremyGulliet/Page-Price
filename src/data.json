@@ -1,0 +1,47 @@
+[
+  {
+    "id":1,
+    "title": "Essentiel",
+    "priceMonth": 179,
+    "priceYear": "1 718",
+    "included": [
+      "+2500 vues/mois",
+      "+60 clics sur votre site",
+      "+15 appels/mois",
+      "+15 demandes d'itinéraires",
+      "Plus de visibilité sur Google",
+      "Réponse aux avis Google inclus"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Ultime",
+    "priceMonth": 439,
+    "priceYear": "4 214",
+    "included": [
+      "+11 000 vues/mois",
+      "+500 clics sur votre site",
+      "+80 appels/mois",
+      "+80 demandes d'itinéraires",
+      "Plus de visibilité sur Google",
+      "Réponse aux avis Google inclus",
+      "1 shooting",
+      "QR code personnalisé"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Premium",
+    "priceMonth": 319,
+    "priceYear": "3 062",
+    "included": [
+      "+6500 vues/mois",
+      "+200 clics sur votre site",
+      "+40 appels/mois",
+      "+40 demandes d'itinéraires",
+      "Plus de visibilité sur Google",
+      "Réponse aux avis Google inclus",
+      "1 shooting"
+    ]
+  }
+]
