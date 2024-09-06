@@ -72,7 +72,7 @@ export default function CardPricesMonth() {
               className={
                 e.title !== "Ultime"
                   ? "flex flex-col justify-between w-[375px] h-[650px]  bg-[radial-gradient(103.02%_79.39%_at_50.04%_100%,rgba(3,25,83,1)_0%,rgba(23,112,247,1)_120%)]"
-                  : "flex flex-col justify-between w-[403px] h-[750px]  bg-gradient-to-l from-blue-400 to-blue-700"
+                  : "flex flex-col justify-between w-[403px] h-[750px] bg-[#A3D7FD] bg-[url('/Ellipse11.png'),url('/Ellipse13.png')] bg-cover bg-center bg-no-repeat"
               }
             >
               <CardHeader>

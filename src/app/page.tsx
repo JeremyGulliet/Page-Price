@@ -6,19 +6,33 @@ import CardPricesYear from "@/components/cardPrice/CardPricesYear";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import * as motion from "framer-motion/client";
+import Image from "next/image";
 
 export default function Home() {
 
   const [activeButton, setActiveButton] = useState("monthly");
 
   return (
-    <main className="flex justify-center bg-gradient-to-tr from-blue-900 to-blue-950 text-white"
-    >
+    <main className="flex justify-center bg-[#010B25] text-white">
+      <Image
+        alt="Ellipse"
+        src="/Ellipse.png"
+        width={500}
+        height={500}
+        className="absolute w-full h-full z-0"
+      />
+      <Image
+        alt="Ellipse 37"
+        src="/Ellipse37.png"
+        width={500}
+        height={500}
+        className="absolute w-full h-full z-0"
+      />
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}
-        className="flex flex-col justify-start items-center"
+        className="flex flex-col justify-start items-center z-10"
       >
         <motion.h6
           initial={{ opacity: 0, scale: 0.5 }}
