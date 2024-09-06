@@ -12,7 +12,7 @@ export default function Home() {
   const [activeButton, setActiveButton] = useState("monthly");
 
   return (
-    <main className="flex justify-center w-screen h-screen  bg-gradient-to-tr from-blue-900 to-blue-950 text-white"
+    <main className="flex justify-center bg-gradient-to-tr from-blue-900 to-blue-950 text-white"
     >
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
