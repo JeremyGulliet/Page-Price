@@ -11,8 +11,7 @@ import {
 import data from "../../data.json";
 import { Button } from "../ui/button";
 import { IoCheckmark } from "react-icons/io5";
-import { IoDiamondOutline } from "react-icons/io5";
-import { TbTargetArrow } from "react-icons/tb";
+import Image from "next/image";
 
 export default function CardPricesMonth() {
   const [currency, setCurrency] = useState("EUR");
@@ -42,7 +41,7 @@ export default function CardPricesMonth() {
   };
 
   return (
-    <section className="flex flex-col justify-center items-center w-screen my-10">
+    <section className="flex flex-col justify-center items-center my-10">
       <div className="flex gap-4 mb-6">
         <Button
           className=" w-24 bg-[radial-gradient(51.41%_105.14%_at_50.04%_105.14%,rgba(10,48,139,1)_0%,rgba(30,110,251,1)_100%)] rounded-xl transition ease-in-out duration-150 hover:scale-105 text-base"
@@ -72,23 +71,31 @@ export default function CardPricesMonth() {
               className={
                 e.title !== "Ultime"
                   ? "flex flex-col justify-between w-[375px] h-[650px]  bg-[radial-gradient(103.02%_79.39%_at_50.04%_100%,rgba(3,25,83,1)_0%,rgba(23,112,247,1)_120%)]"
-                  : "flex flex-col justify-between w-[403px] h-[750px] bg-[#A3D7FD] bg-[url('/Ellipse11.png'),url('/Ellipse13.png')] bg-cover bg-center bg-no-repeat"
+                  : "flex flex-col justify-between w-[403px] h-[750px] bg-[#A3D7FD] bg-[url('/Ellipse11.png'),url('/Ellipse13.png')] bg-cover bg-center bg-no-repeat border-2 border-[#E7EBFF]"
               }
             >
               <CardHeader>
                 {e.title === "Ultime" ? (
                   <CardTitle className="flex flex-col gap-4 text-3xl">
-                    <IoDiamondOutline />
+                    <Image
+                      alt="icon"
+                      src="/Icon(1).png"
+                      width={47}
+                      height={47}
+                    />
                     <div className="flex items-center gap-4">
                       {e.title}
-                      <p className="text-sm bg-blue-300/50 rounded-xl py-1 px-2">
-                        Best Offer
-                      </p>
+                      <Image
+                        alt="bestOffer"
+                        src="/Frame47.png"
+                        width={85}
+                        height={100}
+                      />
                     </div>
                   </CardTitle>
                 ) : (
                   <CardTitle className="flex flex-col gap-4 text-3xl">
-                    <TbTargetArrow />
+                    <Image alt="icon" src="/Icon.png" width={45} height={45} />
                     {e.title}
                   </CardTitle>
                 )}
@@ -111,7 +118,7 @@ export default function CardPricesMonth() {
                 ))}
               </CardContent>
               <CardFooter className="flex justify-center items-center">
-                <Button className=" w-80 bg-[radial-gradient(51.41%_105.14%_at_50.04%_105.14%,rgba(10,48,139,1)_0%,rgba(30,110,251,1)_100%)] rounded-xl transition ease-in-out duration-150 hover:scale-105 text-lg">
+                <Button className=" w-[314px] h-[47px] bg-[radial-gradient(51.41%_105.14%_at_50.04%_105.14%,rgba(10,48,139,1)_0%,rgba(30,110,251,1)_100%)] rounded-[9.24px] transition ease-in-out duration-150 hover:scale-105 text-lg">
                   Je m'abonne
                 </Button>
               </CardFooter>
