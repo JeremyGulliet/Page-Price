@@ -6,7 +6,7 @@ const Space = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pricing - Spikes Challenge",
-  description: "Création d'un page prix",
+  description: "Création d'une page prix",
 };
 
 export default function RootLayout({
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={Space.className}>
+      <body className={Space.className} >
         {children}</body>
     </html>
   );
