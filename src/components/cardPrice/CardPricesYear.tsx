@@ -111,7 +111,7 @@ export default function CardPricesYear() {
                     {getCurrencySymbol()}
                     {convertPrice(e.priceYear)}
                   </span>{" "}
-                  /mois
+                  /an
                 </CardDescription>
               </CardHeader>
               <CardContent>
